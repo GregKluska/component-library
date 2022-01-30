@@ -9,9 +9,11 @@ buildscript {
         gradlePluginPortal()
     }
     dependencies {
-        classpath("com.android.tools.build:gradle:7.0.4")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.21")
-        classpath("com.github.ben-manes:gradle-versions-plugin:0.41.0")
+        val libs = project.extensions.getByType<VersionCatalogsExtension>().named("libs") as org.gradle.accessors.dm.LibrariesForLibs
+
+        classpath(libs.android.pluginGradle)
+        classpath(libs.kotlin.pluginGradle)
+        classpath(libs.benmanes.gvp)
     }
 }
 
