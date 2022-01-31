@@ -2,7 +2,7 @@
 androidxhilt = "1.0.0"
 androidxlifecycle = "2.4.0"
 androidxtest = "1.4.0"
-compose = "1.0.3"
+compose = "1.1.0-rc03"
 coroutines = "1.5.1"
 hilt = "2.38.1"
 kotlin = "1.6.10"
