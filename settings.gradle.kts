@@ -9,3 +9,4 @@ include(":app")
 
 // Enable Version Catalogs
 enableFeaturePreview("VERSION_CATALOGS")
+include(":charts")
